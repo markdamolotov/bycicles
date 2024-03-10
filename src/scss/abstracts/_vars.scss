@@ -1,0 +1,34 @@
+:root {
+  --color-light: #fff;
+  --color-dark: #263238;
+  --color-dark-alt: #000;
+  --color-dark-alt-semi: rgba(00, 00, 00, .5);
+  --color-gray: #6c6c6c;
+  --color-gray-alt: #e3e3e3;
+
+  --ui-base: #baef00;
+  --ui-focus: #baef00;
+  --ui-hover: #d9ff56;
+  --ui-active: #a3d200;
+
+  --font-family-base: 'Arial';
+  --font-family-alt: 'Inter';
+
+  --container-width: 1170px;
+  --container-padding-x: 15px;
+
+  --section-padding-y: 80px;
+
+  --gap: 30px;
+  --gutter: 15px;
+
+  --input-height: 40px;
+  --placeholder-color: #8d8d8d;
+
+  --button-height: 40px;
+
+  --border: 1px solid var(--color-gray-alt);
+  --border-radius: 12px;
+
+  --transition-duration: 0.2s;
+}
