@@ -6,14 +6,19 @@
   color: var(--color-light);
 
   @include mobile-s {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    overflow-x: scroll;
-    scrollbar-width: none;
   }
 
   &__list {
     display: flex;
     column-gap: 50px;
+
+    @include mobile-s {
+      overflow: scroll hidden;
+      scrollbar-width: none;
+    }
   }
 
   &__link {
