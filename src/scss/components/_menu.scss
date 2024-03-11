@@ -1,0 +1,49 @@
+.header-menu {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  font-family: var(--font-family-alt), sans-serif;
+  color: var(--color-light);
+
+  @include mobile-s {
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 50px;
+  }
+
+  &__link {
+    position: relative;
+    z-index: 10;
+
+    &::before {
+      position: absolute;
+      content: '';
+      inset: -1px -5px -4px;
+      background-color: var(--ui-focus);
+      opacity: 0;
+      z-index: -1;
+    }
+
+    &:focus-visible {
+      color: var(--color-dark);
+      outline: none;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    @include hover {
+      color: var(--ui-hover);
+    }
+
+    &:active {
+      color: var(--ui-active);
+    }
+  }
+}

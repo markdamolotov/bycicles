@@ -1,0 +1,26 @@
+.header {
+  background-color: var(--color-dark);
+
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @include tablet-s {
+      flex-direction: column;
+      justify-content: center;
+     
+      &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        width: 100%;
+        padding-inline: 15px;
+        height: 60px;
+        background-color: var(--ui-base);
+        opacity: 1;
+      }
+    }
+  }
+}
