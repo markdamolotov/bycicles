@@ -1,0 +1,39 @@
+.feedback-form {
+
+  &__field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @include mobile-s {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: var(--input-height);
+    padding: 0 16px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    &::placeholder {
+      color: var(--placeholder-color);
+    }
+
+    &:focus-visible {
+      outline: none;
+      border-color: var(--ui-base);
+    }
+  }
+
+  &__button {
+    flex-shrink: 0;
+
+    @include mobile-s {
+      justify-content: center;
+    }
+  }
+}

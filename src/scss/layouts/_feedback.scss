@@ -1,0 +1,66 @@
+.feedback {
+
+  &__inner {
+    display: flex;
+  }
+
+  &__image {
+    flex-basis: 50%;
+
+    img {
+      object-fit: cover;
+      object-position: right;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 255px;
+    padding-inline: 50px;
+    flex-basis: 50%;
+    background-image: url('./../img/feedback/02.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::after {
+      position: absolute;
+      content: '';
+      inset: 0;
+      background-color: var(--color-dark-alt-semi);
+      z-index: 1;
+    }
+
+    @include tablet {
+      flex-basis: 100%;
+    }
+
+    @include mobile {
+      height: 271px;
+      padding-inline: 15px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    flex-basis: 450px;
+    z-index: 10;
+  }
+
+  &__description {
+    max-width: 360px;
+    margin-bottom: 26px;
+    font-size: 20px;
+    color: var(--color-light);
+
+    @include mobile-s {
+      max-width: 270px;
+    }
+  }
+}

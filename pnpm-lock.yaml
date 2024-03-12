@@ -4,6 +4,14 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  inputmask:
+    specifier: ^5.0.8
+    version: 5.0.8
+  just-validate:
+    specifier: ^4.3.0
+    version: 4.3.0
+
 devDependencies:
   '@babel/core':
     specifier: ^7.23.9
@@ -4495,6 +4503,10 @@ packages:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: true
 
+  /inputmask@5.0.8:
+    resolution: {integrity: sha512-1WcbyudPTXP1B28ozWWyFa6QRIUG4KiLoyR6LFHlpT4OfTzRqFfWgHFadNvRuMN1S9XNVz9CdNvCGjJi+uAMqQ==}
+    dev: false
+
   /interpret@1.4.0:
     resolution: {integrity: sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==}
     engines: {node: '>= 0.10'}
@@ -4873,6 +4885,10 @@ packages:
   /just-debounce@1.1.0:
     resolution: {integrity: sha512-qpcRocdkUmf+UTNBYx5w6dexX5J31AKK1OmPwH630a83DdVVUIngk55RSAiIGpQyoH0dlr872VHfPjnQnK1qDQ==}
     dev: true
+
+  /just-validate@4.3.0:
+    resolution: {integrity: sha512-9yS7ZnFk95vq+O7CAa7XZEJvZN5i6jTQWNhLwOjtgkSqiLxo7GZJhK8ViylP76fXPfHLs8tYWqi81XgxPF3OGA==}
+    dev: false
 
   /kew@0.7.0:
     resolution: {integrity: sha512-IG6nm0+QtAMdXt9KvbgbGdvY50RSrw+U4sGZg+KlrSKPJEwVE5JVoI3d7RWfSMdBQneRheeAOj3lIjX5VL/9RQ==}
