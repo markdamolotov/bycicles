@@ -2,7 +2,7 @@
   --color-light: #fff;
   --color-dark: #263238;
   --color-dark-alt: #000;
-  --color-dark-alt-semi: rgba(00, 00, 00, .5);
+  --color-dark-alt-semi: rgba(00, 00, 00, 0.5);
   --color-gray: #6c6c6c;
   --color-gray-alt: #e3e3e3;
 
@@ -31,4 +31,12 @@
   --border-radius: 12px;
 
   --transition-duration: 0.2s;
+
+  @include tablet {
+    --section-padding-y: 60px;
+  }
+
+  @include tablet-s {
+    --section-padding-y: 40px;
+  }
 }
