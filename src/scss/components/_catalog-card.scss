@@ -29,6 +29,10 @@
       height: 150px;
       background-color: var(--color-dark-alt-semi);
       border-radius: var(--border-radius);
+
+      @include mobile {
+        align-items: stretch;
+      }
     }
 
     .catalog-card__title {
@@ -41,7 +45,6 @@
   }
 
   &__image {
-
     img {
       border-radius: var(--border-radius);
       object-fit: cover;
@@ -76,5 +79,9 @@
   &__button {
     justify-content: center;
     margin-top: auto;
+
+    @include mobile {
+      padding-inline: 0;
+    }
   }
 }
