@@ -9,6 +9,10 @@
   border-radius: var(--border-radius);
   transition: background-color .2s;
 
+  @include mobile {
+    height: 32px;
+  }
+
   &:focus-visible {
     outline: 1px solid var(--ui-focus);
     outline-offset: 3px;
