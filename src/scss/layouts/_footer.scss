@@ -1,0 +1,6 @@
+.footer {
+  @include flex-center;
+
+  height: 60px;
+  background-color: var(--color-gray-alt);
+}
